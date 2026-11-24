@@ -1,0 +1,363 @@
+{
+  "theme": {
+    "mode": "light",
+    "accent": "#1b1a17",
+    "paper": "#F7F6F2"
+  },
+  "profile": {
+    "firstName": "Dimas",
+    "lastName": "Parama",
+    "signature": "Dimas Parama",
+    "kanji": "ディマス",
+    "role": "Siswa · Coding & Design",
+    "bio": "Dimas Parama adalah seorang pelajar yang menyukai kemajuan teknologi, desain, dan coding.",
+    "location": "Bali, Indonesia",
+    "born": "Bali, 27 November 2009",
+    "status": "Siswa",
+    "portrait": "assets/hero-portrait.webp",
+    "portraitCutout": true,
+    "email": "paramadimas2@gmail.com",
+    "phone": null,
+    "resumeUrl": null
+  },
+  "nav": {
+    "profile": "Profil",
+    "biography": "Biografi",
+    "activity": "Prestasi",
+    "certificate": "Sertifikat",
+    "quote": "Quote",
+    "gallery": "Galeri",
+    "skills": "Keahlian",
+    "contact": "Kontak",
+    "manage": "Kelola"
+  },
+  "intro": {
+    "kanji": "ディマス",
+    "name": "DIMAS PARAMA",
+    "year": "2026",
+    "skipLabel": "Lewati"
+  },
+  "hero": {
+    "kicker": "DP'S Project",
+    "kickerText": "ディマス・パラマ",
+    "greeting": "Halo aku Dimas!",
+    "dateText": "Bali, 27-11-2009",
+    "projectBy": "Project by DP's Project",
+    "quoteLabel": "The Question Is:",
+    "quoteText": "it's not impossible, it's just hard",
+    "quoteBy": "~Dimas Parama~",
+    "scrollLabel": "SCROLL"
+  },
+  "marquee": [
+    "Parama",
+    "ディマス",
+    "Coding",
+    "Design",
+    "Dimas"
+  ],
+  "about": {
+    "sectionLabel": "01 — Profil",
+    "heading": "Halo, aku",
+    "scriptName": "Dimas!",
+    "paragraphs": [
+      "Aku adalah seorang anak yang menyukai kemajuan teknologi dan suka dengan design, coding, dan banyak hal lainnya seperti bermain musik, menjelajah hal-hal baru, mencoba hal baru, dan bercita-cita berkeliling dunia."
+    ],
+    "portrait": "assets/about-portrait.webp",
+    "portraitCutout": false,
+    "captionLeft": "NO. 001 — PORTRAIT",
+    "captionRight": "BALI",
+    "facts": [
+      {
+        "label": "Nama",
+        "value": "Dimas Parama"
+      },
+      {
+        "label": "Profesi",
+        "value": "Siswa"
+      },
+      {
+        "label": "Lahir",
+        "value": "MAS 27-11-2009"
+      },
+      {
+        "label": "Minat",
+        "value": "Coding & Design"
+      }
+    ]
+  },
+  "bio": {
+    "sectionLabel": "02 — Biografi",
+    "title": "Riwayat singkat",
+    "quote": "Perjalanan kecil yang membentuk cara aku belajar, berkarya, dan melihat hal-hal baru.",
+    "biografi": "Dimas Parama lahir dan tumbuh di Bali. Sejak kecil ia senang membongkar hal-hal kecil untuk tahu cara kerjanya — kebiasaan yang kemudian membawanya ke dunia coding dan desain. Di sekolah ia aktif dalam kegiatan seni dan teknologi, dan di waktu luang ia belajar membuat proyek web sendiri, menulis, serta bermain musik. Baginya, belajar adalah proses yang tidak pernah benar-benar selesai: selalu ada hal baru untuk dicoba, dan selalu ada cara untuk membuat sesuatu terasa lebih baik.",
+    "items": [
+      {
+        "label": "Nama lengkap",
+        "value": "Ngakan Putu DImas Parama",
+        "note": null
+      },
+      {
+        "label": "Lahir",
+        "value": "Mas 27 November 2009",
+        "note": null
+      },
+      {
+        "label": "Profesi",
+        "value": "Siswa",
+        "note": "siswa SMK Negeri 1 Mas Ubud tahun ajaran 2026/2027"
+      },
+      {
+        "label": "Minat",
+        "value": "Coding & Design",
+        "note": "suka belajar banyak hal baru"
+      }
+    ],
+    "educationTitle": "Riwayat pendidikan",
+    "education": [
+      {
+        "period": "2026 — sekarang",
+        "school": "SMK Negeri 1 Mas Ubud",
+        "note": "Fokus pada teknologi, desain, dan kegiatan seni sekolah."
+      },
+      {
+        "period": "2023 — 2025",
+        "school": "SMP Negeri 1 Tegalallang",
+        "note": "belajar untuk memulai dan harus berani mencoba dan tidak menyia-nyiakan kesempatan di depan mata!"
+      },
+      {
+        "period": "2019 — 2022",
+        "school": "Sekolah Dasar",
+        "note": "Awal mengenal komputer dan mulai membuat hal-hal kecil di layar."
+      }
+    ]
+  },
+  "stage": {
+    "sectionLabel": "03 — Prestasi",
+    "heading": "Jejak",
+    "script": "prestasi",
+    "sub": "Hal-hal yang sudah dikerjakan — dari coding, desain, sampai panggung seni.",
+    "items": [
+      {
+        "no": "(01)",
+        "title": "Coding",
+        "desc": "Membangun proyek web dan bereksperimen dengan teknologi baru.",
+        "image": null,
+        "detail": "Berawal dari rasa penasaran, Dimas belajar membuat halaman web sendiri. Setiap proyek kecil dipakai untuk mencoba hal baru — mulai dari tata letak, animasi, sampai cara kerja server.",
+        "meta": "Proyek Pribadi",
+        "year": "2024 — sekarang"
+      },
+      {
+        "no": "(02)",
+        "title": "Design",
+        "desc": "Merancang antarmuka dan visual yang bersih serta mudah dipakai.",
+        "image": null,
+        "detail": "Selain menulis kode, Dimas senang merancang tampilan. Ia mempelajari tipografi, warna, dan susunan elemen agar sebuah halaman terasa nyaman dilihat sekaligus mudah digunakan.",
+        "meta": "UI & Grafis",
+        "year": "2024 — sekarang"
+      },
+      {
+        "no": "(03)",
+        "title": "Musik",
+        "desc": "Bermain musik dan tampil di panggung seni sekolah.",
+        "image": null,
+        "detail": "Di luar layar, Dimas menikmati musik dan pernah tampil dalam pentas seni bersama teman-teman. Pengalaman panggung mengajarkan kerja sama, disiplin latihan, dan keberanian tampil di depan banyak orang.",
+        "meta": "Pentas Seni",
+        "year": "2024 — sekarang"
+      }
+    ]
+  },
+  "projects": {
+    "label": "Karya terpilih",
+    "heading": "Project",
+    "script": "yang pernah dibuat",
+    "sub": "Kumpulan proyek yang saya kerjakan sendiri maupun bersama tim. Klik salah satu kartu untuk melihat detail dan foto dokumentasinya.",
+    "hint": "Klik kartu untuk detail",
+    "note": "Klik kartu untuk melihat detail dan foto dokumentasi.",
+    "emptyTitle": "Belum ada project",
+    "emptyNote": "Tambahkan project lewat panel admin.",
+    "items": [
+      {
+        "no": "NO. 01",
+        "title": "Harita",
+        "desc": "Dashboard harian lokal untuk produktivitas pelajar: tugas, kalender, fokus, dan cuaca Indonesia.",
+        "detail": "Harita adalah dashboard harian yang berjalan sepenuhnya di laptop, tanpa akun dan tanpa cloud. Semua data tersimpan di SQLite lokal.\n\nDi dalamnya ada checklist tugas yang otomatis ter-reset tiap hari, kalender agenda dengan impor/ekspor .ics, countdown lomba, Pomodoro dengan statistik per mata pelajaran, flashcard SM-2 ala Anki, pencatatan nilai & KKM, pengeluaran bulanan, streak kebiasaan dengan heatmap 112 hari, pemutar musik lokal, dan pemantau CPU/RAM/disk realtime.\n\nDibangun dengan Python standar di sisi server dan JavaScript murni di sisi klien, tanpa dependency eksternal. Tampilannya punya mode terang/gelap, delapan aksen warna, dan command palette Ctrl+K untuk navigasi cepat.",
+        "cover": "assets/harita-beranda.webp",
+        "year": "2026",
+        "role": "Desain & Kode",
+        "link": "https://github.com/hayoloo642-cloud/harita-project",
+        "docs": [
+          "assets/harita-beranda.webp",
+          "assets/harita-cuaca.webp",
+          "assets/harita-fokus.webp"
+        ]
+      },
+      {
+        "no": "NO. 02",
+        "title": "CrystaList",
+        "desc": "Klien YouTube Music untuk Android, iOS, dan desktop dengan antarmuka bergaya Apple Music.",
+        "detail": "CrystaList adalah pemutar YouTube Music open source dengan kanvas putih atau hitam pekat, aksen merah #FA243C, tipografi bergaya SF, dan gerak yang tenang seperti iOS.\n\nFitur utamanya: pemutaran tanpa iklan, background playback, unduhan offline, lirik tersinkron dengan terjemahan dan romanisasi, Listen Together untuk mendengarkan bersama, casting ke Google Cast dan DLNA, impor playlist dari 30+ klien lain, serta scrobbling ke Last.fm dan ListenBrainz.\n\nBerjalan di Android 7+, iOS 15+, Windows 10+, macOS 15+, dan Linux. Tersedia dalam lebih dari 15 bahasa.",
+        "cover": "assets/crysta-home.webp",
+        "year": "2026",
+        "role": "Kotlin Multiplatform",
+        "link": "https://github.com/hayoloo642-cloud/CrystaList",
+        "docs": [
+          "assets/crysta-home.webp",
+          "assets/crysta-stats.webp",
+          "assets/crysta-now.webp",
+          "assets/crysta-library.webp",
+          "assets/crysta-history.webp"
+        ]
+      },
+      {
+        "no": "NO. 03",
+        "title": "Portofolio Pribadi",
+        "desc": "Situs portofolio editorial satu halaman dengan panel admin tersembunyi.",
+        "detail": "Situs yang sedang Anda baca ini dirancang dan dibangun sendiri dari nol memakai Laravel dan SQLite. Semua teks, foto, urutan bagian, tema, dan bahasa dapat diubah lewat panel admin tanpa menyentuh kode.\n\nPanel admin sengaja tidak ditautkan di mana pun: hanya bisa dibuka lewat lima ketukan pada logo, pintasan Ctrl+Shift+A, atau alamat rahasia.\n\nAda tiga tema (terang, gelap, midnight) dengan transisi beranimasi, terjemahan Indonesia–Inggris otomatis, marquee yang berjalan hanya saat teks meluap, animasi bingkai hero, penghitung kunjungan, dan integrasi GitHub. Fokus desainnya sederhana: tipografi tenang, banyak ruang kosong, dan animasi yang tidak berisik.",
+        "cover": "assets/proj-porto-hero.webp",
+        "year": "2026",
+        "role": "Desain & Kode",
+        "link": null,
+        "docs": [
+          "assets/proj-porto-hero.webp",
+          "assets/proj-porto-grid.webp",
+          "assets/proj-porto-night.webp"
+        ]
+      }
+    ]
+  },
+  "certificate": {
+    "sectionLabel": "04 — Sertifikat",
+    "heading": "Bukti",
+    "script": "belajar",
+    "sub": "Sertifikat dan penghargaan dari kursus, kompetisi, serta kegiatan yang pernah diikuti.",
+    "hint": "Klik untuk membuka",
+    "note": "Sertifikat segera hadir.",
+    "items": []
+  },
+  "quote": {
+    "sectionLabel": "06 — The Question Is",
+    "text": "Hello guys! hope ur life always good!",
+    "by": "Dimas Parama"
+  },
+  "gallery": {
+    "sectionLabel": "07 — Galeri",
+    "heading": "Potret",
+    "script": "Dimas",
+    "hint": "Geser untuk melihat →",
+    "note": "Potret segera hadir.",
+    "items": [
+      {
+        "image": "assets/gallery-01.webp",
+        "no": "NO. 01",
+        "title": "Potret",
+        "meta": "Editorial"
+      },
+      {
+        "image": "assets/gallery-02.webp",
+        "no": "NO. 02",
+        "title": "Potret",
+        "meta": "Editorial"
+      },
+      {
+        "image": "assets/gallery-03.webp",
+        "no": "NO. 03",
+        "title": "Potret",
+        "meta": "Editorial"
+      },
+      {
+        "image": "assets/gallery-04.webp",
+        "no": "NO. 04",
+        "title": "Potret",
+        "meta": "Editorial"
+      },
+      {
+        "image": "assets/gallery-05.webp",
+        "no": "NO. 05",
+        "title": "Potret",
+        "meta": "Editorial"
+      },
+      {
+        "image": "assets/gallery-06.webp",
+        "no": "NO. 06",
+        "title": "Potret",
+        "meta": "Editorial"
+      },
+      {
+        "image": "assets/gallery-07.webp",
+        "no": "NO. 07",
+        "title": "Potret",
+        "meta": "Editorial"
+      },
+      {
+        "image": "assets/gallery-08.webp",
+        "no": "NO. 08",
+        "title": "Potret",
+        "meta": "Editorial"
+      },
+      {
+        "image": "assets/gallery-09.webp",
+        "no": "NO. 09",
+        "title": "Potret",
+        "meta": "Editorial"
+      },
+      {
+        "image": "assets/gallery-10.webp",
+        "no": "NO. 010",
+        "title": "Potret",
+        "meta": "Editorial"
+      },
+      {
+        "image": "assets/gallery-11.webp",
+        "no": "NO. 011",
+        "title": "Potret",
+        "meta": "Editorial"
+      }
+    ]
+  },
+  "skills": {
+    "sectionLabel": "05 — Keahlian",
+    "heading": "Yang aku",
+    "script": "pelajari",
+    "sub": "Hal-hal yang aku tekuni, dari menulis kode sampai menyusun tampilan.",
+    "note": "Keahlian tumbuh dari rasa ingin tahu yang tidak pernah berhenti.",
+    "githubTitle": "GitHub",
+    "githubNote": "Proyek yang sedang dan pernah aku kerjakan.",
+    "items": [
+      {
+        "name": "Coding",
+        "level": 80,
+        "note": "HTML, CSS, JavaScript, Laravel, dan bereksperimen dengan teknologi baru.",
+        "icon": "code"
+      },
+      {
+        "name": "Design",
+        "level": 76,
+        "note": "Tipografi, warna, tata letak, dan antarmuka yang bersih serta mudah dipakai.",
+        "icon": "pen"
+      },
+      {
+        "name": "Musik",
+        "level": 70,
+        "note": "Bermain alat musik seperti Gitar",
+        "icon": "music"
+      }
+    ]
+  },
+  "contact": {
+    "sectionLabel": "08 — Kontak",
+    "heading": "Terima kasih sudah",
+    "script": "mampir!",
+    "socials": []
+  },
+  "footer": {
+    "projectBy": "Project by Dimas Parama · © Pridiprakasa",
+    "date": "Bali, 27-11-2009",
+    "backTop": "Kembali ke atas",
+    "wordmark": "DIMAS PARAMA",
+    "visitsLabel": "Kunjungan"
+  },
+  "github": {
+    "enabled": false,
+    "user": null
+  }
+}
