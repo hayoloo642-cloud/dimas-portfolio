@@ -945,15 +945,28 @@ const Site = (() => {
       if (done) return;
       done = true;
 
-      // tirai gelap mundur membentuk tangga (lihat motion.css)
+      // tirai gelap mundur sebagai panel yang naik (lihat motion.css)
       intro.classList.add("is-leaving");
       document.dispatchEvent(new CustomEvent("portfolio:intro-leaving"));
 
-      setTimeout(() => {
+      let closed = false;
+      const closeIntro = () => {
+        if (closed) return;
+        closed = true;
         intro.classList.add("is-done");
         document.dispatchEvent(new CustomEvent("portfolio:intro-done"));
-        setTimeout(() => intro.remove(), 900);
-      }, reduced ? 0 : 980);
+        setTimeout(() => intro.remove(), 600);
+      };
+
+      if (reduced) {
+        setTimeout(closeIntro, 0);
+        return;
+      }
+
+      // tunggu panel terakhir selesai, dengan jaring pengaman
+      const lastPanel = intro.querySelector(".intro__panels span:last-child");
+      if (lastPanel) lastPanel.addEventListener("animationend", closeIntro, { once: true });
+      setTimeout(closeIntro, 1500);
     };
 
     $("#introSkip")?.addEventListener("click", (e) => {
