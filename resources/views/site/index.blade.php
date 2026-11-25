@@ -27,7 +27,7 @@
     </p>
     <span class="intro__rule" aria-hidden="true"></span>
     <div class="intro__meta">
-      <span class="intro__name" id="introName">
+      <span class="intro__name" id="introName" aria-label="DIMAS PARAMA">
         <span style="--i:0">D</span><span style="--i:1">I</span><span style="--i:2">M</span><span style="--i:3">A</span><span style="--i:4">S</span><span class="intro__space" style="--i:5">&nbsp;</span><span style="--i:6">P</span><span style="--i:7">A</span><span style="--i:8">R</span><span style="--i:9">A</span><span style="--i:10">M</span><span style="--i:11">A</span>
       </span>
       <span class="intro__dot" aria-hidden="true"></span>
