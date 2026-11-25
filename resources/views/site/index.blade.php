@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght%400,6..96,400;0,6..96,500;1,6..96,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Parisienne&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/site.css" />
-<link rel="stylesheet" href="css/motion.css" />
+<link rel="stylesheet" href="css/site.css?v={{ filemtime(public_path('css/site.css')) }}" />
+<link rel="stylesheet" href="css/motion.css?v={{ filemtime(public_path('css/motion.css')) }}" />
 <link rel="icon" href="assets/favicon.svg" />
 </head>
 <body data-gate="/kelola">
@@ -429,11 +429,11 @@
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<script src="js/data.js"></script>
-<script src="js/icons.js"></script>
-<script src="js/api.js"></script>
-<script src="js/site.js"></script>
-<script src="js/motion.js"></script>
-<script src="js/admin-gate.js"></script>
+<script src="js/data.js?v={{ filemtime(public_path('js/data.js')) }}"></script>
+<script src="js/icons.js?v={{ filemtime(public_path('js/icons.js')) }}"></script>
+<script src="js/api.js?v={{ filemtime(public_path('js/api.js')) }}"></script>
+<script src="js/site.js?v={{ filemtime(public_path('js/site.js')) }}"></script>
+<script src="js/motion.js?v={{ filemtime(public_path('js/motion.js')) }}"></script>
+<script src="js/admin-gate.js?v={{ filemtime(public_path('js/admin-gate.js')) }}"></script>
 </body>
 </html>
