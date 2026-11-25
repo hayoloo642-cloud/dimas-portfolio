@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght%400,6..96,400;0,6..96,500;1,6..96,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Parisienne&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/site.css" />
+<link rel="stylesheet" href="css/motion.css" />
 <link rel="icon" href="assets/favicon.svg" />
 </head>
 <body data-gate="/kelola">
@@ -17,16 +18,26 @@
 
 <!-- ============ INTRO ============ -->
 <div class="intro" id="intro">
+  <span class="intro__halo" aria-hidden="true"></span>
+  <span class="intro__grain" aria-hidden="true"></span>
   <div class="intro__inner">
-    <p class="intro__kanji" id="introKanji">ディマス</p>
+    <span class="intro__kicker mono">PORTFOLIO — MMXXVI</span>
+    <p class="intro__kanji" id="introKanji" aria-label="ディマス">
+      <span style="--i:0">デ</span><span style="--i:1">ィ</span><span style="--i:2">マ</span><span style="--i:3">ス</span>
+    </p>
+    <span class="intro__rule" aria-hidden="true"></span>
     <div class="intro__meta">
-      <span id="introName">DIMAS PARAMA</span>
+      <span class="intro__name" id="introName">
+        <span style="--i:0">D</span><span style="--i:1">I</span><span style="--i:2">M</span><span style="--i:3">A</span><span style="--i:4">S</span><span class="intro__space" style="--i:5">&nbsp;</span><span style="--i:6">P</span><span style="--i:7">A</span><span style="--i:8">R</span><span style="--i:9">A</span><span style="--i:10">M</span><span style="--i:11">A</span>
+      </span>
       <span class="intro__dot" aria-hidden="true"></span>
       <span id="introYear">2026</span>
     </div>
   </div>
+  <div class="intro__count mono" aria-hidden="true"><span>00</span><i></i><span>05</span></div>
   <button class="intro__skip mono" id="introSkip" type="button" data-edit="intro.skipLabel">Lewati</button>
 </div>
+<noscript><style>.intro{display:none!important}</style></noscript>
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
@@ -418,6 +429,7 @@
 <script src="js/icons.js"></script>
 <script src="js/api.js"></script>
 <script src="js/site.js"></script>
+<script src="js/motion.js"></script>
 <script src="js/admin-gate.js"></script>
 </body>
 </html>

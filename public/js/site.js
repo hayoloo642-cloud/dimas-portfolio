@@ -927,28 +927,47 @@ const Site = (() => {
     applyTheme();
     renderGithub();
     applyLangLabel();
+    document.dispatchEvent(new CustomEvent("portfolio:rendered"));
   }
 
   /* ---------------- intro ---------------- */
   function initIntro() {
     const intro = $("#intro");
-    if (!intro) return;
+    const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (!intro) {
+      document.dispatchEvent(new CustomEvent("portfolio:intro-done"));
+      return;
+    }
+
     let done = false;
     const finish = () => {
       if (done) return;
       done = true;
-      intro.classList.add("is-done");
-      setTimeout(() => intro.remove(), 1100);
+
+      // tirai gelap mundur membentuk tangga (lihat motion.css)
+      intro.classList.add("is-leaving");
+      document.dispatchEvent(new CustomEvent("portfolio:intro-leaving"));
+
+      setTimeout(() => {
+        intro.classList.add("is-done");
+        document.dispatchEvent(new CustomEvent("portfolio:intro-done"));
+        setTimeout(() => intro.remove(), 900);
+      }, reduced ? 0 : 980);
     };
-    $("#introSkip").addEventListener("click", finish);
+
+    $("#introSkip")?.addEventListener("click", (e) => {
+      e.stopPropagation();
+      finish();
+    });
     intro.addEventListener("click", (e) => {
       if (e.target === intro) finish();
     });
-    const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    setTimeout(finish, reduced ? 300 : 2400);
     document.addEventListener("keydown", (e) => {
       if (["Escape", "Enter", " "].includes(e.key)) finish();
     }, { once: true });
+
+    setTimeout(finish, reduced ? 250 : 2300);
   }
 
   /* ---------------- interactions ---------------- */
