@@ -660,6 +660,15 @@ const Site = (() => {
         .join("")
     );
 
+    // beri bingkai lebih lebar untuk foto landscape agar tidak ter-crop ekstrem
+    $$(".shot img").forEach((img) => {
+      const mark = () => {
+        if (img.naturalWidth > img.naturalHeight * 1.12) img.closest(".shot")?.classList.add("is-wide");
+      };
+      if (img.complete && img.naturalWidth) mark();
+      else img.addEventListener("load", mark, { once: true });
+    });
+
     $$(".shot").forEach((fig) => {
       fig.addEventListener("click", () => openLightbox(+fig.dataset.shot));
       fig.addEventListener("keydown", (e) => {

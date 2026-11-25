@@ -110,6 +110,73 @@
     from{transform:translate3d(0,0,0)}
     to{transform:translate3d(0,-101%,0)}
   }
+
+  /* Di tema gelap & midnight, tirai dibuat terang supaya balok transisi
+     tetap terlihat saat menyingkap halaman yang gelap. */
+  html.motion-ready[data-mode="dark"] .intro__panels span,
+  html.motion-ready[data-mode="midnight"] .intro__panels span{
+    background:#ece9e1;
+  }
+  html.motion-ready[data-mode="midnight"] .intro__panels span{
+    background:#e7ecf8;
+  }
+  html.motion-ready[data-mode="dark"] .intro,
+  html.motion-ready[data-mode="midnight"] .intro{
+    color:#171715;
+  }
+  html.motion-ready[data-mode="dark"] .intro__kicker,
+  html.motion-ready[data-mode="midnight"] .intro__kicker{
+    color:rgba(23,23,21,.5);
+  }
+  html.motion-ready[data-mode="dark"] .intro__rule,
+  html.motion-ready[data-mode="midnight"] .intro__rule{
+    background:rgba(23,23,21,.32);
+  }
+  html.motion-ready[data-mode="dark"] .intro__name,
+  html.motion-ready[data-mode="midnight"] .intro__name{
+    color:rgba(23,23,21,.68);
+  }
+  html.motion-ready[data-mode="dark"] .intro__count,
+  html.motion-ready[data-mode="midnight"] .intro__count{
+    color:rgba(23,23,21,.46);
+  }
+  html.motion-ready[data-mode="dark"] .intro__count i,
+  html.motion-ready[data-mode="midnight"] .intro__count i{
+    background:rgba(23,23,21,.28);
+  }
+  html.motion-ready[data-mode="dark"] .intro__skip,
+  html.motion-ready[data-mode="midnight"] .intro__skip{
+    color:rgba(23,23,21,.55);
+    border-color:rgba(23,23,21,.26);
+  }
+  html.motion-ready[data-mode="dark"] .intro__skip:hover,
+  html.motion-ready[data-mode="midnight"] .intro__skip:hover{
+    color:#171715;border-color:#171715;
+  }
+  html.motion-ready[data-mode="dark"] .intro__dot,
+  html.motion-ready[data-mode="midnight"] .intro__dot{
+    background:rgba(23,23,21,.3);
+  }
+  html.motion-ready[data-mode="dark"] .intro__halo,
+  html.motion-ready[data-mode="midnight"] .intro__halo{
+    background:
+      radial-gradient(46% 42% at 50% 46%,rgba(255,255,255,.55),transparent 68%),
+      radial-gradient(70% 60% at 50% 110%,rgba(23,23,21,.14),transparent 70%);
+  }
+  html.motion-ready[data-mode="dark"] .intro__grain,
+  html.motion-ready[data-mode="midnight"] .intro__grain{
+    opacity:.06;mix-blend-mode:multiply;
+  }
+  /* aksen teks midnight sedikit kebiruan agar menyatu dengan panelnya */
+  html.motion-ready[data-mode="midnight"] .intro{color:#0a0f1d}
+  html.motion-ready[data-mode="midnight"] .intro__kicker{color:rgba(10,15,29,.5)}
+  html.motion-ready[data-mode="midnight"] .intro__rule{background:rgba(10,15,29,.32)}
+  html.motion-ready[data-mode="midnight"] .intro__name{color:rgba(10,15,29,.68)}
+  html.motion-ready[data-mode="midnight"] .intro__count{color:rgba(10,15,29,.46)}
+  html.motion-ready[data-mode="midnight"] .intro__count i{background:rgba(10,15,29,.28)}
+  html.motion-ready[data-mode="midnight"] .intro__skip{color:rgba(10,15,29,.55);border-color:rgba(10,15,29,.26)}
+  html.motion-ready[data-mode="midnight"] .intro__skip:hover{color:#0a0f1d;border-color:#0a0f1d}
+  html.motion-ready[data-mode="midnight"] .intro__dot{background:rgba(10,15,29,.3)}
 }
 .intro.is-done{
   opacity:0;visibility:hidden;pointer-events:none;
@@ -181,8 +248,16 @@
   }
   /* potret cutout yang masih berlatar terang juga dilebur di tepi bawah */
   html.motion-ready .hero__figure[data-cutout="true"] img{
-    -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 4%,#000 82%,rgba(0,0,0,.5) 94%,transparent 100%);
-    mask-image:linear-gradient(to bottom,transparent 0,#000 4%,#000 82%,rgba(0,0,0,.5) 94%,transparent 100%);
+    -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 4%,#000 72%,rgba(0,0,0,.45) 90%,transparent 100%);
+    mask-image:linear-gradient(to bottom,transparent 0,#000 4%,#000 72%,rgba(0,0,0,.45) 90%,transparent 100%);
+  }
+  /* di layar kecil potret lebih pendek, jadi fade dibuat lebih panjang
+     supaya potongan pinggang benar-benar melebur ke halaman */
+  @media (max-width:760px){
+    html.motion-ready .hero__figure[data-cutout="true"] img{
+      -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 4%,#000 54%,rgba(0,0,0,.62) 72%,rgba(0,0,0,.22) 89%,transparent 100%);
+      mask-image:linear-gradient(to bottom,transparent 0,#000 4%,#000 54%,rgba(0,0,0,.62) 72%,rgba(0,0,0,.22) 89%,transparent 100%);
+    }
   }
   html.motion-ready .hero__figure[data-cutout="true"]{
     clip-path:none;opacity:0;transform:translateX(-50%) translateY(22px) scale(.98);
